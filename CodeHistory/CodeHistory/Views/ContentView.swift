@@ -12,6 +12,7 @@ struct ContentView: View {
             questionText: "What was the first computer bug?",
             possibleAnswers: ["Ant", "Beetle", "Moth", "Fly"],
             correctAnswerIndex: 2)
+    @StateObject var viewModel = GameViewModel()
     @State var mainColor = Color(red: 20/255, green: 28/255, blue: 58/255)
     let accentColor = Color(red: 48/255, green: 105/255, blue: 240/255)
     
