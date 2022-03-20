@@ -4,5 +4,6 @@
         <page name='HelloWorld'/>
         <page name='Conditional'/>
         <page name='Variabel'/>
+        <page name='Loops'/>
     </pages>
 </playground>
