@@ -5,5 +5,10 @@
         <page name='Conditional'/>
         <page name='Variabel'/>
         <page name='Loops'/>
+        <page name='Array'/>
+        <page name='Dictionary'/>
+        <page name='Funntions'/>
+        <page name='Structure'/>
+        <page name='Class'/>
     </pages>
 </playground>

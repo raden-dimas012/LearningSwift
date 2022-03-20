@@ -126,6 +126,63 @@ for i in stride(from: 0, to: 5, by: 1){
     print(" ")
 }
 
+// challenge #5 whale talk
+var input: String = "Raden Dimas"
+
+var output: String = ""
+
+for char in input {
+  let lowerChar: String = char.lowercased()
+
+  switch lowerChar {
+    case "a","i","o","m" :
+      output += lowerChar.uppercased()
+    case "e","u" :
+      output += lowerChar == "e" ? "EE" : "UU"
+    default :
+      continue
+  }
+}
+
+print(output)
+
+// challenge #6 99 bottles of milk
+var numBottles: Int = 99
+
+// while numBottles > 0 {
+//   print("\(numBottles) bottles of milk on the wall, \(numBottles) bottles of milk! You take one down and pass it around... \(numBottles) bottles of milk on the wall!")
+//   numBottles -= 1
+// }
+
+// print("0 bottles of milk on the wall,")
+// print("0 bottles of milk!")
+// print("Go to the store and buy some more")
+// print("99 bottles of milk on the wall!")
+
+for _ in 1...numBottles {
+    print("\(numBottles) bottles of milk on the wall, \(numBottles) bottles of milk! You take one down and pass it around... \(numBottles) bottles of milk on the wall!")
+}
+
+print("0 bottles of milk on the wall,")
+print("0 bottles of milk!")
+print("Go to the store and buy some more")
+print("99 bottles of milk on the wall!")
+
+// challenge #6 99 fizz buzz
+for number in 1...100 {
+  if number % 2 == 0 {
+    print("Pazz")
+  } else if number % 3 == 0 {
+    print("Fizz")
+  } else if number % 5 == 0 {
+    print("Buzz")
+  } else if number % 3 == 0 && number % 5 == 0 {
+    print("FizzBuzz")
+  } else {
+    print(number)
+  }
+}
+
 
 
 //: [Next](@next)
